@@ -1,9 +1,10 @@
 #!name=Youtube/Music
-#!desc=Suitable for Youtube & Youtube Music (IOS >= 15) LU:21/1/24
+#!desc=Suitable for Youtube & Youtube Music (IOS >= 15) LU:12/2/24
 
 
 [Rule]
-AND,((DOMAIN-SUFFIX,googlevideo.com),(PROTOCOL,UDP)),REJECT-DROP
+AND,((DOMAIN-SUFFIX,googlevideo.com), (PROTOCOL,UDP)),REJECT
+AND,((DOMAIN,youtubei.googleapis.com), (PROTOCOL,UDP)),REJECT
 
 [Script]
 youtube.request = type=http-request,pattern=^https:\/\/youtubei\.googleapis\.com\/youtubei\/v1\/(browse|next|player|reel\/reel_watch_sequence),requires-body=1,max-size=-1,binary-body-mode=1,script-path=https://raw.githubusercontent.com/ahtungko/js/main/rq.js
