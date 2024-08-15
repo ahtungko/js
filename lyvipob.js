@@ -1,1 +1,10 @@
-var _0x2e9288=_0x382d;(function(_0x5132e6,_0x434933){var _0x4ca2ba=_0x382d,_0x26dcb9=_0x5132e6();while(!![]){try{var _0x3acd2d=-parseInt(_0x4ca2ba(0x187))/0x1*(parseInt(_0x4ca2ba(0x17b))/0x2)+-parseInt(_0x4ca2ba(0x185))/0x3*(-parseInt(_0x4ca2ba(0x180))/0x4)+-parseInt(_0x4ca2ba(0x17f))/0x5*(-parseInt(_0x4ca2ba(0x17e))/0x6)+-parseInt(_0x4ca2ba(0x183))/0x7+-parseInt(_0x4ca2ba(0x178))/0x8*(-parseInt(_0x4ca2ba(0x181))/0x9)+-parseInt(_0x4ca2ba(0x17a))/0xa+-parseInt(_0x4ca2ba(0x177))/0xb*(-parseInt(_0x4ca2ba(0x182))/0xc);if(_0x3acd2d===_0x434933)break;else _0x26dcb9['push'](_0x26dcb9['shift']());}catch(_0x2df6a2){_0x26dcb9['push'](_0x26dcb9['shift']());}}}(_0x448c,0xf0491));function _0x448c(){var _0x2ebe95=['result','1CuvPre','20576523bAzdHx','8458840sYkixO','hasOwnProperty','12925560gVdSDC','3333494wDmhqS','parse','stringify','86994ZvdZMn','430jDAAYU','76XGdcgs','9YZsQFC','12DwIHcf','12016193gBzgxk','body','234513TOtMvC'];_0x448c=function(){return _0x2ebe95;};return _0x448c();}function _0x382d(_0x19b0c1,_0x967abf){var _0x448c01=_0x448c();return _0x382d=function(_0x382da9,_0x52f592){_0x382da9=_0x382da9-0x177;var _0x3d13e2=_0x448c01[_0x382da9];return _0x3d13e2;},_0x382d(_0x19b0c1,_0x967abf);}var xkabctt=$response[_0x2e9288(0x184)],obj=JSON[_0x2e9288(0x17c)](xkabctt),vipInfo={'vip_end_time':0x3b8612284f0,'is_vip':0x1,'permanent_vip':0x1,'volume_total':0x5f5e09c};for(let key in obj[_0x2e9288(0x186)]){vipInfo[_0x2e9288(0x179)](key)&&(obj[_0x2e9288(0x186)][key]=vipInfo[key]);}xkabctt=JSON[_0x2e9288(0x17d)](obj),$done(xkabctt);
+var xkabctt = $response.body;
+var obj = JSON.parse(xkabctt);
+var vipInfo = {vip_end_time: 4090438518000, vip_hours:1, is_vip: 1, vip_grade:1, vip_type:1, permanent_vip: 1, volume_total: 99999900};
+for (let key in obj.result) {
+  if (vipInfo.hasOwnProperty(key)) {
+    obj.result[key] = vipInfo[key];
+  }
+}
+xkabctt = JSON.stringify(obj);
+$done(xkabctt);
