@@ -1,0 +1,8 @@
+#!name=LY Vip
+#!desc=Unlock LY Vip
+
+[Script]
+lyzj = type=http-response, pattern=^http:\/\/luyintu\.cushuikeji\.cn\/tuv2\.user\/info, script-path=https://raw.githubusercontent.com/ahtungko/js/main/lyvipob.js, requires-body=true, max-size=-1, timeout=60
+
+[MITM]
+hostname = %APPEND% luyintu.cushuikeji.cn
