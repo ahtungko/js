@@ -1,5 +1,6 @@
 #!name=LY Vip
 #!desc=Unlock LY Vip
+#!url=https://raw.githubusercontent.com/ahtungko/js/main/lyvip.module
 
 [Script]
 lyzj = type=http-response, pattern=^http:\/\/luyintu\.cushuikeji\.cn\/tuv2\.user\/info, script-path=https://raw.githubusercontent.com/ahtungko/js/main/lyvipob.js, requires-body=true, max-size=-1, timeout=60
