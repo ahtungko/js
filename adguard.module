@@ -2,7 +2,7 @@
 #!desc=AdGuard
 
 [Script]
-AdGuard = type=http-response, pattern=^https:\/\/mobile-api\.adguard\.org\/api\/.+\/ios_validate_receipt\/(.*?), script-path=https://github.com/ahtungko/js/blob/main/adguardob.js, requires-body=true, max-size=-1, timeout=60
+AdGuard = type=http-response, pattern=^https:\/\/mobile-api\.adguard\.org\/api\/.+\/ios_validate_receipt\/(.*?), script-path=https://raw.githubusercontent.com/ahtungko/js/main/adguardob.js, requires-body=true, max-size=-1, timeout=60
 
 [MITM]
 hostname = %APPEND% mobile-api.adguard.org
