@@ -1,0 +1,8 @@
+#!name=画zManga
+#!desc=Unlock Vip
+
+[Script]
+shutiaomh = type=http-response, pattern=^http[s]?:\/\/www.shutiaomh.com\/api\/\/getSysUserInfo, script-path=https://raw.githubusercontent.com/ahtungko/js/main/hzmhob.js, requires-body=true, max-size=-1, timeout=60
+
+[MITM]
+hostname = %APPEND% www.shutiaomh.com
